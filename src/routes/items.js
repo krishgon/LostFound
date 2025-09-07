@@ -1,7 +1,7 @@
 // Items routes - CRUD operations for lost and found items
 // Handles all item-related endpoints with proper authentication and authorization
 const router = require("express").Router();
-const ctrl = require("../controllers/itemsController");
+const ctrl = require("../controllers/itemsControllers");
 const { authRequired, requireAdmin, requireOwnerOrAdmin } = require("../middleware/authMiddleware");
 
 // Public read endpoints - anyone can access these
