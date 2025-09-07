@@ -5,8 +5,8 @@
 1. **Clone Repository**
 
    ```bash
-   git clone https://github.com/yourusername/campus-lost-found.git
-   cd campus-lost-found
+   git clone https://github.com/krishgon/LostFound.git
+   cd LostFound
    npm install
    ```
 
@@ -85,10 +85,8 @@
 ## Challenges & Decisions
 
 * First time implementing JWT authentication; learned token signing and verification.
-* Faced bcrypt hash issues (61 characters with newline vs valid 60 char hash) that blocked login; solved by reseeding with correct hashes.
-* Started with 1–2 files, then moved to a structured separation of concerns (routes, controllers, models, middleware).
-* Learned the difference between Express app port (3000) and PostgreSQL port (5432).
-* Improved workflow by testing endpoints in Postman with saved environments and tokens.
+* Faced bcrypt hash issues (61 characters with newline vs valid 60 char hash) that blocked login. Ran a query on the database that trimmed unwanted characters in the hash and solved the issue
+* Forgot to add the user_id column in the items table in the database, so the code threw an error.
 
 ---
 
