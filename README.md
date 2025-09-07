@@ -87,11 +87,3 @@
 * First time implementing JWT authentication; learned token signing and verification.
 * Faced bcrypt hash issues (61 characters with newline vs valid 60 char hash) that blocked login. Ran a query on the database that trimmed unwanted characters in the hash and solved the issue
 * Forgot to add the user_id column in the items table in the database, so the code threw an error.
-
----
-
-## Author
-
-* Name: Your Name
-* Email: [your@email.com](mailto:your@email.com)
-* GitHub: [yourusername](https://github.com/yourusername)
